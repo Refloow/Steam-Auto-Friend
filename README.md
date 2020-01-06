@@ -1,6 +1,19 @@
 # Steam-Auto-Friend
 Node.js based script for steam to accept all incoming friend requests on steam sending one custom welcome message, adding user to selected group and displaying custom playing game status message.
 
+# Features
+
+Main features: 
+
+Accepting incoming friend requests (can be disabled in config)
+Sending welcome message (message can be disabled or set in config)
+After accepting request adding to the group (group can be set in config or inviting disabled)
+Ignoring requests from users that are below <x> level (level can be set in config or put 0 to disable)
+Displaying custom playing game status message.
+Clean and understandable console logs.
+Easy to setup config.
+
+
 # SETUP GUIDE
 
 To setup bot follow next steps.
@@ -16,9 +29,16 @@ MY CHOICE IS SUBLIME text editor
 GET SUBLIME HERE: https://www.sublimetext.com/3
 
 Step 3 (Fill config)
-Fill the config with sensitive data such as steam username, password, shared secret & identity secret.
+Fill the config with sensitive data such as steam username, password, shared secret.
 Fill the group id (can be found in browser go to group page and inspect element) if you want your bot after receiving friend request and accepting it to invite user to the selected group group.
 Fill the welcome custom message for bot to sent custom message when request is accepted.
+Personalize configuration in config
+
+Step 4 (install bot modules)
+Double click install.bat file for modules to be installed.
+
+Step 5 (run the bot)
+Click start.bat file to run bot.
 
 If there is any questions feel free to ask me on: https://steamcommunity.com/id/MajokingGames/
 
