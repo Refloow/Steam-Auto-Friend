@@ -5,40 +5,47 @@ Node.js based script for steam to accept all incoming friend requests on steam s
 
 #### Main features: 
 
-1. Accepting incoming friend requests (can be disabled in config)
-2. Sending welcome message (message can be disabled or set in config)
-3. After accepting request adding to the group (group can be set in config or inviting disabled)
-4. Ignoring requests from users that are below <x> level (level can be set in config or put 0 to disable)
-5. Displaying custom playing game status message.
-6. Clean and understandable console logs.
-7. Easy to setup config.
+- Accepting incoming friend requests (can be disabled in config)
+- Sending welcome message (message can be disabled or set in config)
+- After accepting request adding to the group (group can be set in config or inviting disabled)
+- Ignoring requests from users that are below <x> level (level can be set in config or put 0 to disable)
+- Displaying custom playing game status message.
+- Clean and understandable console logs.
+- Easy to setup config.
 
+# Prerequisites
+- Node.js (https://nodejs.org/en/)
+- Text editor (recommend sublime: https://www.sublimetext.com/3)
 
-# SETUP GUIDE
+# Essentials
+- Steam Account
+- Shared Secret code ([What is ?](https://searchsecurity.techtarget.com/definition/shared-secret) | [How to get it on IOS ?](https://forums.backpack.tf/topic/45995-guide-how-to-get-your-shared-secret-from-ios-device-steam-mobile/) | [How to get it on android ?](https://forums.backpack.tf/topic/46354-guide-how-to-find-the-steam-identity_secret-on-an-android-phone/))
+
+# Setup Guide (Step By Step)
 
 To setup bot follow next steps.
 
 Step 1 (Get the files)
-1. Click clone or download, get the files unzip them. 
+- Click clone or download, get the files unzip them. 
 
 Step 2 (Install requirements)
-1. Next thing to install if previously not installed is node.js and text editor
-2. GET NODE.JS HERE: https://nodejs.org/en/
-3. To edit config file you need text editor by choice you can use notepad ++, visual studio code and many more...
-4. MY CHOICE IS SUBLIME text editor
-5. GET SUBLIME HERE: https://www.sublimetext.com/3
+- Next thing to install if previously not installed is node.js and text editor
+- GET NODE.JS HERE: https://nodejs.org/en/
+- To edit config file you need text editor by choice you can use notepad ++, visual studio code and many more...
+- MY CHOICE IS SUBLIME text editor
+- GET SUBLIME HERE: https://www.sublimetext.com/3
 
 Step 3 (Fill config)
-1. Fill the config with sensitive data such as steam username, password, shared secret.
-2. Fill the group id (can be found in browser go to group page and inspect element) if you want your bot after receiving friend request 3. and accepting it to invite user to the selected group group.
-4. Fill the welcome custom message for bot to sent custom message when request is accepted.
-5. Personalize configuration in config
+- Fill the config with sensitive data such as steam username, password, shared secret.
+- Fill the group id (can be found in browser go to group page and inspect element)
+- Fill the welcome custom message for bot to sent custom message when request is accepted.
+- Personalize configuration in config
 
 Step 4 (install bot modules)
-1. Double click install.bat file for modules to be installed.
+- Double click install.bat file for modules to be installed.
 
 Step 5 (run the bot)
-1. Click start.bat file to run bot.
+- Click start.bat file to run bot.
 
 If there is any questions feel free to ask me on: https://steamcommunity.com/id/MajokingGames/
 
@@ -46,3 +53,6 @@ If there is any questions feel free to ask me on: https://steamcommunity.com/id/
 
 If you have some requests feel free to contact me : https://steamcommunity.com/id/MajokingGames/ i can code custom features to the bot or if you want you can get premium version with already built in features such as declining friend requests if level is lower then <x>, declining or accepting random group invites (online & offline(offline if requests to join group are sent when bot was ofline)), scaning the user & many more.
 
+# Licence
+
+This project is licensed under the MIT License - see the LICENSE file for more details
