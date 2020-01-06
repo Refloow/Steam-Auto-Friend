@@ -3,15 +3,15 @@ Node.js based script for steam to accept all incoming friend requests on steam s
 
 # Features
 
-Main features: 
+#### Main features: 
 
-Accepting incoming friend requests (can be disabled in config)
-Sending welcome message (message can be disabled or set in config)
-After accepting request adding to the group (group can be set in config or inviting disabled)
-Ignoring requests from users that are below <x> level (level can be set in config or put 0 to disable)
-Displaying custom playing game status message.
-Clean and understandable console logs.
-Easy to setup config.
+1. Accepting incoming friend requests (can be disabled in config)
+2. Sending welcome message (message can be disabled or set in config)
+3. After accepting request adding to the group (group can be set in config or inviting disabled)
+4. Ignoring requests from users that are below <x> level (level can be set in config or put 0 to disable)
+5. Displaying custom playing game status message.
+6. Clean and understandable console logs.
+7. Easy to setup config.
 
 
 # SETUP GUIDE
@@ -19,26 +19,26 @@ Easy to setup config.
 To setup bot follow next steps.
 
 Step 1 (Get the files)
-Click clone or download, get the files unzip them. 
+1. Click clone or download, get the files unzip them. 
 
 Step 2 (Install requirements)
-Next thing to install if previously not installed is node.js and text editor
-GET NODE.JS HERE: https://nodejs.org/en/
-To edit config file you need text editor by choice you can use notepad ++, visual studio code and many more...
-MY CHOICE IS SUBLIME text editor
-GET SUBLIME HERE: https://www.sublimetext.com/3
+1. Next thing to install if previously not installed is node.js and text editor
+2. GET NODE.JS HERE: https://nodejs.org/en/
+3. To edit config file you need text editor by choice you can use notepad ++, visual studio code and many more...
+4. MY CHOICE IS SUBLIME text editor
+5. GET SUBLIME HERE: https://www.sublimetext.com/3
 
 Step 3 (Fill config)
-Fill the config with sensitive data such as steam username, password, shared secret.
-Fill the group id (can be found in browser go to group page and inspect element) if you want your bot after receiving friend request and accepting it to invite user to the selected group group.
-Fill the welcome custom message for bot to sent custom message when request is accepted.
-Personalize configuration in config
+1. Fill the config with sensitive data such as steam username, password, shared secret.
+2. Fill the group id (can be found in browser go to group page and inspect element) if you want your bot after receiving friend request 3. and accepting it to invite user to the selected group group.
+4. Fill the welcome custom message for bot to sent custom message when request is accepted.
+5. Personalize configuration in config
 
 Step 4 (install bot modules)
-Double click install.bat file for modules to be installed.
+1. Double click install.bat file for modules to be installed.
 
 Step 5 (run the bot)
-Click start.bat file to run bot.
+1. Click start.bat file to run bot.
 
 If there is any questions feel free to ask me on: https://steamcommunity.com/id/MajokingGames/
 
