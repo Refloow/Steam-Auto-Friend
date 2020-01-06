@@ -1,3 +1,12 @@
+// Auto Friend Request - Bot built by Refloow (-MajokingGames)
+
+/* 
+  Here is contact info: refloowcontact@gmail.com 
+  or main dev steam: https://steamcommunity.com/id/MajokingGames/
+
+ */
+
+
 // Checking if all modules are correctly installed
 
 try {
@@ -14,6 +23,7 @@ try {
 const config = require('./Settings/config.js');
 const steam = require('./steam');
 const logger = require('./logger');
+const method = require('./methods');
 const client = new SteamUser();
 const community = new SteamCommunity();
 const logOnOptions = {
@@ -22,6 +32,10 @@ const logOnOptions = {
 	twoFactorCode: SteamTotp.generateAuthCode(config.shared_secret)
 };
 
+// Checking for correct version (updates) for bot on github
+
+method.check();
+
 // APP START
 
 client.logOn(logOnOptions);
@@ -29,32 +43,57 @@ client.logOn(logOnOptions);
 client.on('loggedOn', () => {
 	client.setPersona(SteamUser.Steam.EPersonaState.LookingToTrade,);
 	client.gamesPlayed(config.CustomPlayingMessage);
-	logger.correct(`| [Refloow| |: User is logged and script is ready to accept all friend requests.`);
+	logger.correct(`| [Refloow] | LOGIN |: User is logged and script is ready to accept all friend requests.`);
 });
 
 // Script to accept all incoming friend requests welcome them with custom message sent in config and invite them to selected group.
-client.on("friendRelationship", (SENDER, REL) => {
-	if (REL === 2) {
-		client.addFriend(SENDER);
-	} else if (REL === 3) {
-		if (config.INVITETOGROUPID) {
-			client.inviteToGroup(SENDER, config.INVITETOGROUPID);
-		}
-		client.chatMessage(SENDER, config.WELCOME);
+
+client.on('friendRelationship', (steamID, relationship) => {
+    if(method.acceptFriends()) {
+        if(relationship == 2) {
+            logger.correct(`| [Steam] | NEW NOTIFICATION |: Steam ID: ${steamID.getSteamID64()} has added us!`);
+            info = 'info';
+            client.getPersonas([steamID], (personas) => {
+                var persona = personas[steamID.getSteamID64()];
+                var name = persona ? persona.player_name : (`['${steamID.getSteamID64()}']`);
+                
+                client.getSteamLevels([steamID], function(results) {
+                    var level = results[steamID.getSteamID64()]
+
+                    if(method.highEnoughLevel(level)) {
+
+                        client.addFriend(steamID);
+                        logger.info(`| [Steam] | FRIEND |: I'm now friends with ${name}, their level: ${level}`);
+                        
+                        if(method.messagesEnabled()) {
+                            var chat = method.manageMessage(name)
+                            
+                            client.chatMessage(steamID, chat);
+                            logger.info(`| [Steam] | FRIEND |: I sent a welcome message to ${name.yellow}: "${chat}"`);
+                        }
+                    }
+                    else 
+                        logger.info(`| [Steam] | FRIEND |: ${name.yellow} sent a friend request, not accepting user since his/her level is only ${level}`);
+                });
+            });
+        } else if (relationship === 3) {
+            if(method.inviteEnabled()) {
+                  client.inviteToGroup(steamID, config.INVITETOGROUPID);
+                   logger.info(`| [Steam] | GROUP |: Invited ${steamID} to the selected group !`);
+        } else {
+            logger.info('| [Steam] | GROUP |: User is already in group or group invites are disabled.');
+        };
+   }}
+});
+
+
+// Alert when someone remove us from friendlist.
+
+client.on('friendRelationship', function (steamID, relationship) {
+	if (relationship == 0) {
+		logger.fail(`| [Steam] | FRIEND |: USER ID: ${steamID.getSteamID64()} has deleted us from their friendlist.`);
 	}
 });
 
-client.on('friendRelationship', function (steamID, relationship) {
-	if (relationship == 2) {
-		logger.correct(`| [Steam] | NEW NOTIFICATION |: Steam ID: ${steamID.getSteamID64()} has added us!`);
-		client.addFriend(steamID, (err, name) => {
-			if (err) {
-				logger.error(`| [Steam] | NEW FRIEND |: Error trying to add ${steamID.getSteamID64()}. Reason: ${err.toString()}`);
-			} else if (name) {
-				logger.correct(`| [Steam] | NEW FRIEND |: Succesfully added ${name} to friendlist.`);
-			}
-		});
-	} else if (relationship == 0) {
-		logger.fail(`| [Steam] | FRIEND | USER ID: ${steamID.getSteamID64()} has deleted us from their friendlist.`);
-	}
-});
+
+// Soon adding checking for offline requests.
