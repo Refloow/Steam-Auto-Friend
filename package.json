@@ -14,7 +14,7 @@
     "winston": "^3.1.0",
     "moment": "^2.22.2",
     "request": "2.88.0"
-  }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
