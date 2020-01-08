@@ -11,6 +11,10 @@ t = module.exports = {
         return config.messages == true;
     },
 
+    messagesEnabledOffline: function() {
+        return config.messages_offline == true;
+    },
+
     inviteEnabled: function() {
         return config.group_inviting == true;
     },
@@ -19,12 +23,23 @@ t = module.exports = {
         return config.auto_accept == true;
     },
 
+    acceptFriendsOffline: function() {
+        return config.auto_accept_offline == true;
+    },
+
     highEnoughLevel: function(level) {
         return level >= config.minimum_level;
     },
 
     manageMessage: function(name) {
         var message = config.add_message;
+        if(message.indexOf('%') > -1)
+            return message.replace('%', name);
+        return message;
+    },
+
+    manageMessageOffline: function(name) {
+        var message = config.add_message_offline;
         if(message.indexOf('%') > -1)
             return message.replace('%', name);
         return message;
@@ -53,9 +68,9 @@ t = module.exports = {
             var page = JSON.parse(body)
             const v = package.version;
             if(page.version != v)
-                console.log(`| [GitHub] | VERSION |:  ${'New update available for '+package.name+ ' v'+page.version.green+'! You\'re currently only running version '+v.yellow+''}\n${`| [GitHub] | VERSION |: Go to https://github.com/Refloow/Steam-Auto-Friend to update now!`}`)
+                console.log(`| [GitHub] | VERSION |:  ${'New update available for '+package.name+ ' v'+page.version.green+'! You\'re currently only running version '+v.yellow+''}\n${`| [GitHub] | VERSION |: Go to https://github.com/Refloow/Steam-Auto-Friend to update now!`}\n\n`)
             else 
-                console.log(`| [GitHub] | VERSION |: You're running the latest version of steam-auto-friend (v${v.green})`)
+                console.log(`| [GitHub] | VERSION |: You're running the latest version of steam-auto-friend (v${v.green})\n\n`)
         }
         request(options, look)
     }
