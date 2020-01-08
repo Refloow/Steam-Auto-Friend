@@ -15,8 +15,8 @@ try {
 	SteamCommunity = require('steamcommunity');
 	TradeOfferManager = require('steam-tradeoffer-manager');
 } catch (ex) {
-	console.log(ex);
 	console.log('| [Modules] |: Missing dependencies. Install a version with dependecies or use npm install.');
+	console.log(ex);
 	process.exit(1);
 }
 
