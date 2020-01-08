@@ -38,13 +38,6 @@ t = module.exports = {
         return message;
     },
 
-    manageMessageOffline: function(name) {
-        var message = config.add_message_offline;
-        if(message.indexOf('%') > -1)
-            return message.replace('%', name);
-        return message;
-    },
-
     log: function(info) {
         return `${package.name} | `.green + `${moment().format('LTS')} `+
         `${info == "info" ? info.green : ""+info == "trade" ? info.magenta : ""+info == "warn" ? info.yellow : ""}:`
