@@ -1,3 +1,8 @@
+# Hotfix 1.2.1
+- Temporarily Removed some of the features (used to crash bot) untill we re-impliment them (New code will be released in new update
+- Features removed:
+    - Different welcome message for users that waited (added bot while he was offline)
+
 # Version 1.2.0
 - Updated info cmd messages
 - Added new cmd info messages
