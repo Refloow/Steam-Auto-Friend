@@ -53,6 +53,7 @@ client.on('loggedOn', () => {
 
 // Checking and accepting offline pending friend requests.
         // SOON ADDING CHECKING LEVEL FOR OFFLINE REQUESTS //
+        // SOON ADDING SENDING MESSAGES AFTER RESPONDING TO OFFLINE REQUESTS //
 
 client.on("friendsList", function() {
     // Check if accepting offline users is turned on.
@@ -65,15 +66,6 @@ client.on("friendsList", function() {
             // Add them back.
             client.addFriend(steamid64);
             logger.info(`| [Steam] | Offline Request |: Accepted offline friend request from: ${steamid64} `);
-
-            // Check if sending mesages to people who added bot while he is offline
-            if(method.messagesEnabledOffline()) {
-                var chat = method.manageMessageOffline(name)
-                            
-                // Sending message.
-                client.chatMessage(steamID, chat);
-                logger.info(`| [Steam] | FRIEND |: I sent a welcome message to ${name.yellow}: who added us offline.`);
-           }
         }
     }
     }
