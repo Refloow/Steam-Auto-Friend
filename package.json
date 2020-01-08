@@ -1,6 +1,6 @@
 {
   "name": "steam-auto-friend",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Node.js based script to accept incoming friend requests on steam sending one custom welcome message and displaying custom playing game status message.",
   "main": "index.js",
   "dependencies": {
@@ -17,6 +17,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://https://github.com/Refloow/Steam-Auto-Friend.git"
   },
   "author": "Refloow -MajokingGames https://steamcommunity.com/id/MajokingGames/",
   "license": "MIT"
