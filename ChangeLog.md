@@ -1,3 +1,20 @@
+# Version 1.2.0
+- Updated info cmd messages
+- Added new cmd info messages
+- Added new notes to the code
+- Added checking for offline friend requests
+- Added sending different message for offline friend requests
+- Added new config options
+- Options added to config:
+       Disable responding to offline friend requests (requests that are sent while bot is off)
+       Option to set different message for offline friend requests
+- Added new methods
+- Methods added:
+       messagesEnabledOffline,
+       acceptFriendsOffline,
+       manageMessageOffline
+- Updated package file
+
 # Version 1.1.0
 - Added changelog
 - Updated cmd info messages
