@@ -43,7 +43,40 @@ client.logOn(logOnOptions);
 client.on('loggedOn', () => {
 	client.setPersona(SteamUser.Steam.EPersonaState.LookingToTrade,);
 	client.gamesPlayed(config.CustomPlayingMessage);
-	logger.correct(`| [Refloow] | LOGIN |: User is logged and script is ready to accept all friend requests.`);
+	logger.correct(`| [Refloow] | LOGIN |: User is logged and script is ready to accept incoming friend requests.`);
+    if(method.acceptFriendsOffline()) {
+        logger.correct(`| [Refloow] | OFFLINE |: Checking for pending requests that are sent offline...`)
+    }
+    else
+        logger.correct('| [Refloow] | OFFLINE |: Check for offline requests is disabled. Skiping....')
+});
+
+// Checking and accepting offline pending friend requests.
+        // SOON ADDING CHECKING LEVEL FOR OFFLINE REQUESTS //
+
+client.on("friendsList", function() {
+    // Check if accepting offline users is turned on.
+    if(method.acceptFriendsOffline()) {
+    for (var steamid64 in client.myFriends) {
+        // This is the relation we have with the user.
+        var relationship = client.myFriends[steamid64];
+        // Check if they send us a friend request
+        if (relationship == SteamUser.Steam.EFriendRelationship.RequestRecipient) {
+            // Add them back.
+            client.addFriend(steamid64);
+            logger.info(`| [Steam] | Offline Request |: Accepted offline friend request from: ${steamid64} `);
+
+            // Check if sending mesages to people who added bot while he is offline
+            if(method.messagesEnabledOffline()) {
+                var chat = method.manageMessageOffline(name)
+                            
+                // Sending message.
+                client.chatMessage(steamID, chat);
+                logger.info(`| [Steam] | FRIEND |: I sent a welcome message to ${name.yellow}: who added us offline.`);
+           }
+        }
+    }
+    }
 });
 
 // Script to accept all incoming friend requests welcome them with custom message sent in config and invite them to selected group.
@@ -94,6 +127,3 @@ client.on('friendRelationship', function (steamID, relationship) {
 		logger.fail(`| [Steam] | FRIEND |: USER ID: ${steamID.getSteamID64()} has deleted us from their friendlist.`);
 	}
 });
-
-
-// Soon adding checking for offline requests.
