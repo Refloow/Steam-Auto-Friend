@@ -9,7 +9,7 @@ Node.js based script for steam to accept all incoming friend requests on steam s
 
 # DISCORD Support Server
 
-https://discord.gg/UKbGDpv
+https://discord.gg/MdFZrT6
 
 # Features
 
