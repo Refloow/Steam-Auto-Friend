@@ -41,9 +41,12 @@ method.check();
 client.logOn(logOnOptions);
 
 client.on('loggedOn', () => {
-	client.setPersona(SteamUser.Steam.EPersonaState.LookingToTrade,);
-	client.gamesPlayed(config.CustomPlayingMessage);
-	logger.correct(`| [Refloow] | LOGIN |: User is logged and script is ready to accept incoming friend requests.`);
+	client.setPersona(SteamUser.Steam.EPersonaState.Online);
+    logger.correct(`| [Refloow] | LOGIN |: User is logged and script is ready to accept incoming friend requests.`);
+    if(method.DisableCustomMessage()) {
+        logger.correct(`| [Refloow] | ONLINE |: Setting Custom Playing Message.`)
+        client.gamesPlayed(config.CustomPlayingMessage);
+    } else logger.correct(`| [Refloow] | ONLINE |: Custom Playing Message is disabled.`)
     if(method.acceptFriendsOffline()) {
         logger.correct(`| [Refloow] | OFFLINE |: Checking for pending requests that are sent offline...`)
     }
