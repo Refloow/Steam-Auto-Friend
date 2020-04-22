@@ -1,3 +1,9 @@
+# Update 1.2.2
+
+- Added feature (enabled toggling custom displayed message and chaning state to online)
+- Added new info messages
+- Added new method for togling custom displayed ingame messages
+
 # Hotfix 1.2.1
 - Temporarily Removed some of the features (used to crash bot) untill we re-impliment them (New code will be released in new update
 - Features removed:
