@@ -38,6 +38,10 @@ t = module.exports = {
         return message;
     },
 
+    DisableCustomMessage: function() {
+        return config.disable_custom_message == true;
+    },
+
     log: function(info) {
         return `${package.name} | `.green + `${moment().format('LTS')} `+
         `${info == "info" ? info.green : ""+info == "trade" ? info.magenta : ""+info == "warn" ? info.yellow : ""}:`
