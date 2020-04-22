@@ -8,8 +8,9 @@ module.exports = {
 	shared_secret: '',
 	
             // Settings //
-               
-        CustomPlayingMessage: "",                  // Message that will be displayed as playing game
+    
+        disable_custom_message: true,           // [true/false] Enable or disable custom playing message if is set to true set it down or if is into false bot will show online state.
+        CustomPlayingMessage: ``,                  // Message that will be displayed as playing game |- fill it up if disable_custom_message is set to true
 	    INVITETOGROUPID: '103582791463409634',     // id of the group that bot will invite user after accepting friend request
         add_message: 'Hi, how can i help you %?',  // Leave the '%' to get it to replace it with the user's name
         // Soon add_offline_message: 'Hi ! Sorry for waiting to be accepted, how can i help you ? ',  // Message that bot sent to users which requests that are sent when bot was offline.
@@ -41,4 +42,3 @@ module.exports = {
         persona: 'Online',                          // Steam persona status
         game: [440, 730, 735],
 }
-
