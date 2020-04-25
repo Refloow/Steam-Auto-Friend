@@ -7,6 +7,16 @@ Node.js based script for steam to accept all incoming friend requests on steam s
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/Refloow/Steam-Auto-Friend/master/LICENSE)
 [![Steam](https://img.shields.io/badge/steam-donate-yellow.svg)](https://steamcommunity.com/tradeoffer/new/?partner=392773011&token=CncehZti)
 
+# Note:
+To everyone who plan to sell our project by stating that they coded it or that they sell edited version. Project is licenced under the MIT licence
+
+"The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software."
+
+This means that if you plan to sell our project to make quick buck please keep the copyright notice and copy of oreginal licence. In case of breaking licencing tearms we may take legal charges against you.
+
+Project is made open source and free for all. We cant prohibit reselling of our project but if you do please follow the licencing tearms.
+
 # DISCORD Support Server
 
 https://discord.gg/XxvjjPs
