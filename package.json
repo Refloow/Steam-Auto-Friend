@@ -3,6 +3,10 @@
   "version": "1.2.2",
   "description": "Node.js based script to accept incoming friend requests on steam sending one custom welcome message and displaying custom playing game status message.",
   "main": "index.js",
+  "bugs": {
+        "url": "https://github.com/Refloow/Steam-Auto-Friend/issues"
+    },
+  "homepage": "https://github.com/Refloow/Steam-Auto-Friend/blob/master/README.md",
   "dependencies": {
     "jsonfile": "^5.0.0",
     "p-queue": "^3.0.0",
