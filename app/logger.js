@@ -1,6 +1,23 @@
+// Auto Friend Request - Bot built by Refloow (-MajokingGames)
+
+/* 
+  Here is contact info: refloowcontact@gmail.com 
+  or main dev steam: https://steamcommunity.com/id/MajokingGames/
+
+ */
+
 // This file is not part of the bot here is writed code for cmd color log.
 
-const winston = require('winston');
+try {
+    // Checking if module winston is correctly installed
+    winston = require('winston');
+} catch (ex) {
+    // If modules are not installed showing an clear error message to user.
+    console.log('| [Modules] |: Missing dependencies. Install a version with dependecies or use npm install.');
+    console.log(ex);
+    process.exit(1);
+}
+
 const level ={
   error: 0,
   correct: 1,
@@ -34,3 +51,11 @@ const logger = module.exports = winston.createLogger({
   ],
   level: 'info'
 });
+
+// Auto Friend Request - Bot built by Refloow (-MajokingGames)
+
+/* 
+  Here is contact info: refloowcontact@gmail.com 
+  or main dev steam: https://steamcommunity.com/id/MajokingGames/
+
+ */
