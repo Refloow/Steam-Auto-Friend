@@ -1,8 +1,8 @@
 # Version 1.3.0
 
-- Fixed issue for correctly checking for user level and accepting friend request 
-- Added sending friend message to accpted offline friend requests
-- Separated messaging actions uppon accepting friend request to new event (when request accepted)
+- Fixed issue for correctly checking for user level and accepting friend request
+- Added sending friend message to accepted offline friend requests
+- Separated messaging actions upon accepting friend request to new event (when request accepted)
 - Added more detailed comments for everything
 - Added option for disabling update notifications
 - Added session expire reload
