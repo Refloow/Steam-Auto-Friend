@@ -1,36 +1,66 @@
+// Auto Friend Request - Bot built by Refloow (-MajokingGames)
+
+/* 
+  Here is contact info: refloowcontact@gmail.com 
+  or main dev steam: https://steamcommunity.com/id/MajokingGames/
+
+ */
+
 
 // We strongly recommend not editing stuff that is in this file.
 
+ // Checking if all modules are correctly installed
+
+try {
+    // Checking if module colors is correctly installed
+    colors = require('colors');
+    // Checking if module moment is correctly installed
+    moment = require('moment');
+} catch (ex) {
+    // If modules are not installed showing an clear error message to user.
+    console.log('| [Modules] |: Missing dependencies. Install a version with dependecies or use npm install.');
+    console.log(ex);
+    process.exit(1);
+}
+
+// Importing files
 const package = require('./../package.json');
 const config = require('./Settings/config.js');
-const colors = require('colors');
-const moment = require('moment');
 
+// Exporting method module
 t = module.exports = {
+
+    // Method for siabling messages
+    DisableUpdateNotif: function() {
+        return config.UpdateNotif == true;
+    },
+
+    // Method for siabling messages
     messagesEnabled: function() {
         return config.messages == true;
     },
 
-    messagesEnabledOffline: function() {
-        return config.messages_offline == true;
-    },
-
+    // Method for disabling inviting in selected group
     inviteEnabled: function() {
         return config.group_inviting == true;
     },
 
+    // Method for disabling auto accepting for friend requests
     acceptFriends: function() {
         return config.auto_accept == true;
     },
 
+    // Method for disabling accepting offline friend requests
     acceptFriendsOffline: function() {
         return config.auto_accept_offline == true;
     },
 
+    // Method for checking level
     highEnoughLevel: function(level) {
         return level >= config.minimum_level;
     },
 
+    // Method for config % name placeholder
     manageMessage: function(name) {
         var message = config.add_message;
         if(message.indexOf('%') > -1)
@@ -38,13 +68,9 @@ t = module.exports = {
         return message;
     },
 
+    // Method for disabling custom playing message
     DisableCustomMessage: function() {
         return config.disable_custom_message == true;
-    },
-
-    log: function(info) {
-        return `${package.name} | `.green + `${moment().format('LTS')} `+
-        `${info == "info" ? info.green : ""+info == "trade" ? info.magenta : ""+info == "warn" ? info.yellow : ""}:`
     },
 
     games: function() {
@@ -55,6 +81,7 @@ t = module.exports = {
         return package.name
     },
 
+    // Method for checking updates
     check: function() {
         const request = require('request');
         var options = {
@@ -72,3 +99,12 @@ t = module.exports = {
         request(options, look)
     }
 }
+
+
+// Auto Friend Request - Bot built by Refloow (-MajokingGames)
+
+/* 
+  Here is contact info: refloowcontact@gmail.com 
+  or main dev steam: https://steamcommunity.com/id/MajokingGames/
+
+ */
