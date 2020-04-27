@@ -1,5 +1,13 @@
 module.exports = {
 
+// Auto Friend Request - Bot built by Refloow (-MajokingGames)
+
+/* 
+  Here is contact info: refloowcontact@gmail.com 
+  or main dev steam: https://steamcommunity.com/id/MajokingGames/
+
+ */
+
 
     // Bot account information // 
 
@@ -8,8 +16,8 @@ module.exports = {
 	shared_secret: '',
 	
             // Settings //
-    
-        disable_custom_message: true,           // [true/false] Enable or disable custom playing message if is set to true set it down or if is into false bot will show online state.
+
+        disable_custom_message: true,           // [true/false] Enable or disable | custom playing message if is set to true set it down or if is into false bot will show online state.
         CustomPlayingMessage: ``,                  // Message that will be displayed as playing game |- fill it up if disable_custom_message is set to true
 	    INVITETOGROUPID: '103582791463409634',     // id of the group that bot will invite user after accepting friend request
         add_message: 'Hi, how can i help you %?',  // Leave the '%' to get it to replace it with the user's name
@@ -21,9 +29,9 @@ module.exports = {
         group_inviting: true,                   // [true/false] inviting user to the selected group
         auto_accept: true,                      // [true/false] Enable or disable automatically accepting friend requests.
         auto_accept_offline: true,              // [true/false] Enable or disable checking and accepting firend requests that are sent while bot is offline.
+        UpdateNotif: true,                      // [true/false] Enable or disable | Notification in dev console uppon new version update
 
-
-        minimum_level: 2,                       // Minimum level required to be automatically accepted if setting above is true 
+        minimum_level: 0,                       // Minimum level required to be automatically accepted if setting above is true 
         // Soon adding minimum_level_offline    // Minimum level required to be automaticly accepted if your request is sent while bot is offline
 
 
@@ -42,3 +50,4 @@ module.exports = {
         persona: 'Online',                          // Steam persona status
         game: [440, 730, 735],
 }
+
