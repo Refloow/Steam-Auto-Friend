@@ -76,8 +76,4 @@ If there is any questions feel free to ask me on: https://steamcommunity.com/id/
 
 # Want Improvements ?
 
-If you have some requests feel free to contact me : https://steamcommunity.com/id/MajokingGames/ i can code custom features to the bot or if you want you can get premium version with already built in features such as declining friend requests if level is lower then <x>, declining or accepting random group invites (online & offline(offline if requests to join group are sent when bot was ofline)), scaning the user & many more.
-
-# Licence
-
-This project is licensed under the MIT License - see the LICENSE file for more details
+If you have some private requests feel free to contact main dev : https://steamcommunity.com/id/MajokingGames/
