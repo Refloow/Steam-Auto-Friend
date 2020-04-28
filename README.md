@@ -1,5 +1,12 @@
-# Steam-Auto-Friend
-Node.js based script for steam to accept all incoming friend requests on steam sending one custom welcome message, adding user to selected group and displaying custom playing game status message.
+<p align="center">
+<img width="160" height="160" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Steam_Logo.png">
+</p>
+<p align="center">
+<img width="600" height="100" src="https://github.com/d0biar/skdsajl/blob/master/ProjectImages/Steam-Auto-Friend.png">
+</p>
+
+# About
+Steam-Auto-Friend is Node.js based script for steam to accept all incoming friend requests on steam sending one custom welcome message, adding user to selected group and displaying custom playing game status message.
 
 ![GitHub package version](https://img.shields.io/github/package-json/v/Refloow/Steam-Auto-Friend.svg)
 [![GitHub forks](https://img.shields.io/github/forks/Refloow/Steam-Auto-Friend.svg?style=plastic)](https://github.com/Refloow/Steam-Auto-Friend/network)
