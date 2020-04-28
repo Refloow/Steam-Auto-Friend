@@ -5,6 +5,7 @@ Node.js based script for steam to accept all incoming friend requests on steam s
 [![GitHub forks](https://img.shields.io/github/forks/Refloow/Steam-Auto-Friend.svg?style=plastic)](https://github.com/Refloow/Steam-Auto-Friend/network)
 [![GitHub stars](https://img.shields.io/github/stars/Refloow/Steam-Auto-Friend.svg?style=plastic)](https://github.com/Refloow/Steam-Auto-Friend/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/Refloow/Steam-Auto-Friend/master/LICENSE)
+[![downloads](https://img.shields.io/github/downloads/Refloow/Steam-Auto-Friend/total)](https://github.com/Refloow/Steam-Card-Bot-PRO)
 [![Steam](https://img.shields.io/badge/steam-donate-yellow.svg)](https://steamcommunity.com/tradeoffer/new/?partner=392773011&token=CncehZti)
 
 # Note:
