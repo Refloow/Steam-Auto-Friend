@@ -12,7 +12,7 @@ Steam-Auto-Friend is Node.js based script for steam to accept all incoming frien
 [![GitHub forks](https://img.shields.io/github/forks/Refloow/Steam-Auto-Friend.svg?style=plastic)](https://github.com/Refloow/Steam-Auto-Friend/network)
 [![GitHub stars](https://img.shields.io/github/stars/Refloow/Steam-Auto-Friend.svg?style=plastic)](https://github.com/Refloow/Steam-Auto-Friend/stargazers)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/Refloow/Steam-Auto-Friend/master/LICENSE)
-[![Language](https://img.shields.io/badge/language-Node.js-green)](https://en.wikipedia.org/wiki/Node.js)
+[![Language](https://img.shields.io/badge/-Node.js-green)](https://en.wikipedia.org/wiki/Node.js)
 [![Language](https://img.shields.io/badge/language-JavaScript-yellow.svg)](https://en.wikipedia.org/wiki/JavaScript)
 [![Steam](https://img.shields.io/badge/steam-donate-yellow.svg)](https://steamcommunity.com/tradeoffer/new/?partner=392773011&token=CncehZti)
 
