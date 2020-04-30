@@ -1,7 +1,7 @@
 // Auto Friend Request - Bot built by Refloow (-MajokingGames)
 
 /* 
-  Here is contact info: refloowcontact@gmail.com 
+  Here is contact info: refloowlibrarycontact@gmail.com
   or main dev steam: https://steamcommunity.com/id/MajokingGames/
 
  */
@@ -55,7 +55,7 @@ const logger = module.exports = winston.createLogger({
 // Auto Friend Request - Bot built by Refloow (-MajokingGames)
 
 /* 
-  Here is contact info: refloowcontact@gmail.com 
+  Here is contact info: refloowlibrarycontact@gmail.com
   or main dev steam: https://steamcommunity.com/id/MajokingGames/
 
  */
