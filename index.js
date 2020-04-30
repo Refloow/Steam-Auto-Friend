@@ -1,7 +1,7 @@
 // Auto Friend Request - Bot built by Refloow (-MajokingGames)
 
 /* 
-  Here is contact info: refloowcontact@gmail.com 
+  Here is contact info: refloowlibrarycontact@gmail.com
   or main dev steam: https://steamcommunity.com/id/MajokingGames/
 
  */
@@ -43,7 +43,7 @@ console.log('If bot doesnt start in next 1 minute steam is down.\n\n'.green );
 // Auto Friend Request - Bot built by Refloow (-MajokingGames)
 
 /* 
-  Here is contact info: refloowcontact@gmail.com 
+  Here is contact info: refloowlibrarycontact@gmail.com
   or main dev steam: https://steamcommunity.com/id/MajokingGames/
 
  */
