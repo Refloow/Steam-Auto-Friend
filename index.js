@@ -18,9 +18,6 @@ try {
 	process.exit(1);
 }
 
-// Importing main app file
-require('./app/app.js');
-
 // Basic display information on app start
 
 console.log('8888888b.          .d888888                              '.cyan);
@@ -39,6 +36,8 @@ console.log('Loading config file...'.green );
 console.log('Starting bot...'.green );
 console.log('If bot doesnt start in next 1 minute steam is down.\n\n'.green );
 
+// Importing main app file
+require('./app/app.js');
 
 // Auto Friend Request - Bot built by Refloow (-MajokingGames)
 
