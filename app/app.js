@@ -27,12 +27,12 @@ try {
 
 // Importing files into project
 const config = require('./Settings/config.js');
-const steam = require('./steam');
 const logger = require('./logger');
 const method = require('./methods');
 
+// Name of the steam client
 const refloow = new SteamUser();
-const community = new SteamCommunity();
+
 const logOnOptions = {
 	accountName: config.accountName,
 	password: config.password,
