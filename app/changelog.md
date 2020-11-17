@@ -1,3 +1,41 @@
+# Version 1.3.1
+
+## Improved
+
+- Compatibility
+   - Code now works with older and newer versions of nodejs
+
+## Added
+
+- Added two login protocol enabling & disabling two factor auth for an account
+
+## Changed
+
+- Updated all modules to latest versions
+- Code has been adjusted to the new module versions
+
+## Removed [temporary] - Coming back in next update
+
+- Level Check filter for accepting friend requests
+- %name% feature in welcome message
+- Name of user in console logs.
+
+
+
+
+# PREVIOUS VERSIONS ARE DEPRECIATED BY NEW VERSION OF NODEJS
+
+  Here is a link of the node.js version that previous versions of project are compatible with & will work without any errors:
+  https://nodejs.org/dist/latest-v12.x/
+  
+  Shod download:
+  node-v12.19.0-x64.msi
+  or
+  node-v12.19.0-x86.msi 
+  
+  on windows 86x is for x32 systems and for 64x is 64x installer
+
+
 # Version 1.3.0
 
 - Fixed issue for correctly checking for user level and accepting friend request
