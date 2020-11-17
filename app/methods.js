@@ -30,14 +30,14 @@ const config = require('./Settings/config.js');
 // Exporting method module
 t = module.exports = {
 
-    // Method for siabling messages
+    // Method for disabling update notifications
     DisableUpdateNotif: function() {
         return config.UpdateNotif == true;
     },
 
-    // Method for siabling messages
+    // Method for disabling adding welcome message
     messagesEnabled: function() {
-        return config.messages == true;
+        return config.welcome_message_enable == true;
     },
 
 
@@ -76,7 +76,7 @@ t = module.exports = {
 
     // Method for disabling custom playing message
     DisableCustomMessage: function() {
-        return config.disable_custom_message == true;
+        return config.EnableCustomPlayingMessage == true;
     },
 
     games: function() {
