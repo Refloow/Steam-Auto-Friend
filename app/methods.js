@@ -40,6 +40,12 @@ t = module.exports = {
         return config.messages == true;
     },
 
+
+    // Two login protocol
+    AutoGenerateLoginCodes: function() {
+        return config.Has2FactorAuth == true;
+    },
+
     // Method for disabling inviting in selected group
     inviteEnabled: function() {
         return config.group_inviting == true;
