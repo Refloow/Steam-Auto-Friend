@@ -30,14 +30,24 @@ const config = require('./Settings/config.js');
 const logger = require('./logger');
 const method = require('./methods');
 
-// Name of the steam client
+// Steam Client Name
 const refloow = new SteamUser();
 
-const logOnOptions = {
+// var name;
+
+// Login option (auto generating 2fa codes)
+const logOnOptions2FA = {
 	accountName: config.accountName,
 	password: config.password,
 	twoFactorCode: SteamTotp.generateAuthCode(config.shared_secret)
 };
+
+// Login option (login without 2fa codes)
+const logOnOptionsNO2FA = {
+    accountName: config.accountName,
+    password: config.password,
+};
+
 
 // Checking for correct version (updates) for bot on github
 
@@ -46,15 +56,28 @@ if(method.DisableUpdateNotif()) {
     method.check();
 }
 
-// APP START
+// ----------------------------- APP START --------------------------------
 
-// Loging on
-refloow.logOn(logOnOptions);
+
+// LOGING ON
+
+// If auto generate method is used use options for login auto
+if(method.AutoGenerateLoginCodes())
+    {
+    refloow.logOn(logOnOptions2FA);
+}
+// If auto generate method is disabled use options for login manual
+if(!method.AutoGenerateLoginCodes())
+    {
+    refloow.logOn(logOnOptionsNO2FA);
+}
 
 refloow.on('loggedOn', () => {
-	refloow.setPersona(SteamUser.Steam.EPersonaState.Online);
-    logger.correct(`| [Refloow] | LOGIN |: User is logged and script is ready to accept incoming friend requests.`);
-    if(method.DisableCustomMessage()) {
+        refloow.getPersonas([refloow.steamID], (personas) => {
+        logger.correct("| [Refloow] | LOGIN |: User #" + refloow.steamID + " is logged and script is ready to accept incoming friend requests.");
+    });
+    refloow.setPersona(1);
+   if(method.DisableCustomMessage()) {
         logger.correct(`| [Refloow] | ONLINE |: Setting Custom Playing Message.`)
         refloow.gamesPlayed(config.CustomPlayingMessage);
     } else logger.correct(`| [Refloow] | ONLINE |: Custom Playing Message is disabled.`)
@@ -66,36 +89,38 @@ refloow.on('loggedOn', () => {
 });
 
 
-setTimeout(() => process.exit, 1000*60*60*4);
-refloow.setOption('promptSteamGuardCode', false)
-
 // Script to accept all incoming friend requests welcome them with custom message sent in config and invite them to selected group.
 
-refloow.on('friendRelationship', (steamID, relationship) => {
+
+refloow.on('friendRelationship', (SENDER, REL) => {
     if(method.acceptFriends()) {
-        if(relationship == 2) {
-            logger.correct(`| [Steam] | NEW NOTIFICATION |: Steam ID: ${steamID.getSteamID64()} has added us!`);
+        if(REL == 2) {
+            logger.correct(`| [Steam] | NEW NOTIFICATION |: Steam ID: ${SENDER.getSteamID64()} has added us!`);
             info = 'info';
-            refloow.getPersonas([steamID], (personas) => {
-                var persona = personas[steamID.getSteamID64()];
-                var name = persona ? persona.player_name : (`['${steamID.getSteamID64()}']`);
+
+            //refloow.getPersonas(SENDER, (personas) => {
+
+                //var persona = personas[SENDER.getSteamID64()];
+                //var name = persona ? persona.player_name : (`['${SENDER.getSteamID64()}']`);
                 
-                refloow.getSteamLevels([steamID], function(results) {
-                    var level = results[steamID.getSteamID64()]
+                //refloow.getSteamLevels([SENDER], function(results) {
+                //    var level = results[SENDER]
 
-                    if(method.highEnoughLevel(level)) {
+                    //Utils.getBadges(SENDER.getSteamID64(), (ERR, DATA, CURRENTLEVEL, XPNEEDED) => {
 
-                        refloow.addFriend(steamID);
-                        logger.info(`| [Steam] | FRIEND |: I'm now friends with ${name}, their level: ${level}`);
-                    }
-                    else 
-                        logger.info(`| [Steam] | FRIEND |: ${name.yellow} sent a friend request, not accepting user since his/her level is only ${level}`);
-                });
-            });
-        } else if (relationship === 3) {
+                    //if(method.highEnoughLevel(level)) {
+
+                        refloow.addFriend(SENDER);
+                        logger.info(`| [Steam] | FRIEND |: I'm now friends with ${SENDER.getSteamID64()},`);
+                    //}
+                    //else 
+                        //logger.info(`| [Steam] | FRIEND |: ${personas[SENDER.steamID].player_name} sent a friend request, not accepting user since his/her level is only ${level}`);
+              //  });
+            //});
+        } else if (REL === 3) {
             if(method.inviteEnabled()) {
-                  refloow.inviteToGroup(steamID, config.INVITETOGROUPID);
-                   logger.info(`| [Steam] | GROUP |: Invited ${steamID} to the selected group !`);
+                  refloow.inviteToGroup(SENDER, config.INVITETOGROUPID);
+                   logger.info(`| [Steam] | GROUP |: Invited ${SENDER.getSteamID64()} to the selected group !`);
         } else {
             logger.info('| [Steam] | GROUP |: User is already in group or group invites are disabled.');
         };
@@ -105,31 +130,36 @@ refloow.on('friendRelationship', (steamID, relationship) => {
 
 // Alert when someone remove us from friendlist.
 
-refloow.on('friendRelationship', function (steamID, relationship) {
-    if (relationship == 0) {
-        logger.fail(`| [Steam] | FRIEND |: USER ID: ${steamID.getSteamID64()} has deleted us from their friendlist.`);
+refloow.on('friendRelationship', function (SENDER, REL) {
+    if (REL == 0) {
+        logger.fail(`| [Steam] | FRIEND |: USER ID: ${SENDER.getSteamID64()} has deleted us from their friendlist.`);
     }
 });
 
+
 // Message uppon friend request accepting event
 
-refloow.on('friendRelationship', function (steamID, relationship) {
-    if (relationship == 3) {
-         refloow.getPersonas([steamID], (personas) => {
-                var persona = personas[steamID.getSteamID64()];
-                var name = persona ? persona.player_name : (`['${steamID.getSteamID64()}']`);
+refloow.on('friendRelationship', function (SENDER, REL) {
+    if (REL == 3) {
+     //    refloow.getPersonas(SENDER, (personas) => {
+
+                // var persona = personas[SENDER.getSteamID64()];
+                // var name = persona ? persona.player_name : (`['${SENDER.getSteamID64()}']`);
             
             if(method.messagesEnabled()) {
-            var chat = method.manageMessage(name)
              
-                refloow.chatMessage(steamID, chat);
-                logger.info(`| [Steam] | FRIEND |: I sent a welcome message to ${name.yellow}: "${chat}"`);              
+                refloow.chatMessage(SENDER, config.add_message);
+                logger.info(`| [Steam] | FRIEND |: I sent a welcome message to ${SENDER.getSteamID64()}: "${config.add_message}"`);              
             }
             else 
             logger.info(`| [Steam] | FRIEND |: Sending welcome message to user is disabled.`)
-        });
+       // });
     }
 })
+
+
+
+
 
 // Checking and accepting offline pending friend requests.
         // SOON ADDING CHECKING LEVEL FOR OFFLINE REQUESTS //
@@ -143,7 +173,7 @@ refloow.on("friendsList", function(steamid64, relationship) {
         var relationship = refloow.myFriends[steamid64];
         // Check if they send us a friend request
                 
-        if (relationship == SteamUser.Steam.EFriendRelationship.RequestRecipient) {
+        if (relationship == SteamUser.EFriendRelationship.RequestRecipient) {
             // Add them back.
             refloow.addFriend(steamid64);
             // DEV Console
