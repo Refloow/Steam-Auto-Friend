@@ -13,6 +13,9 @@ module.exports = {
 
 	accountName: '',
 	password: '',
+	
+	Has2FactorAuth: true, // [true/false] - In case account has no authentication set to false and leave shared_secret empty
+	
 	shared_secret: '',
 	
             // Settings //
