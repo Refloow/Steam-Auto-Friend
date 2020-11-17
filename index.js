@@ -31,10 +31,16 @@ console.log('888   T88b "Y8888 888   888 "Y88P"  "Y88P"  "Y8888888P" \n\n\n'.cya
 console.log('This bot was developed by MajokingGames'.cyan);
 console.log('Verision 1.3.1'.cyan);
 console.log('Thanks for choosing us.'.cyan);
-console.log('This version doesnt contain UI. Login not required...'.red);
+console.log('This version doesnt contain UI'.red);
 console.log('Loading config file...'.green );
 console.log('Starting bot...'.green );
 console.log('If bot doesnt start in next 1 minute steam is down.\n\n'.green );
+
+console.log('If you enjoy using our projects, you can support us via donations,  '.brightYellow);
+console.log('that way we can keep releasing free projects & updates for existing ones!'.brightYellow);
+console.log('Check links down below:\n'.brightYellow);
+console.log('Ko-fi: https://ko-fi.com/refloow'.green);
+console.log('Steam: https://steamcommunity.com/tradeoffer/new/?partner=392773011&token=CncehZti (ingame items)\n\n'.green);
 
 // Importing main app file
 require('./app/app.js');
