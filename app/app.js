@@ -16,8 +16,6 @@ try {
 	SteamTotp = require('steam-totp');
     // Checking if module steamcommunity is correctly installed
 	SteamCommunity = require('steamcommunity');
-    // Checking if module steam-tradeoffer-manager is correctly installed
-	TradeOfferManager = require('steam-tradeoffer-manager');
 } catch (ex) {
     // If modules are not installed showing an clear error message to user.
 	console.log('| [Modules] |: Missing dependencies. Install a version with dependecies or use npm install.');
