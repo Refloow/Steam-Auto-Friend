@@ -55,18 +55,8 @@ https://discord.gg/XxvjjPs
 
 # Prerequisites
 
-- Node.js - Version recommended for most users
-- *Note: current version of the project is depreciated by newer version of node.js
-  Here is a link of the node.js version that project is compatible with & will work without any errors:
-  https://nodejs.org/dist/latest-v12.x/
-  
-  Shod download:
-  node-v12.19.0-x64.msi
-  or
-  node-v12.19.0-x86.msi 
-  
-  on windows 86x is for x32 systems and for 64x is 64x installer
-  
+- Node.js - Version recommended for most users (https://nodejs.org/en/)
+
 - Text editor (recommend sublime: https://www.sublimetext.com/3)
 
 # Essentials
