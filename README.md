@@ -5,21 +5,6 @@
 <img width="600" height="100" src="https://github.com/d0biar/skdsajl/blob/master/ProjectImages/Steam-Auto-Friend.png">
 </p>
 
-# IMPORTANT
-
-THIS VERSION OF THE PROJECT IS BEEN DEPRECIATED BY NODE.JS 
-
-- *Note: current version of the project is depreciated by newer version of node.js
-  Here is a link of the node.js version that project is compatible with & will work without any errors:
-  https://nodejs.org/dist/latest-v12.x/
-  
-  Shod download:
-  node-v12.19.0-x64.msi
-  or
-  node-v12.19.0-x86.msi 
-  
-  on windows 86x is for x32 systems and for 64x is 64x installer
-
 # About
 Steam-Auto-Friend is Node.js based script for steam to accept all incoming friend requests on steam sending one custom welcome message, adding user to selected group and displaying custom playing game status message.
 
