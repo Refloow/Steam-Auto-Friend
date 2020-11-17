@@ -2,7 +2,10 @@
 
 /* 
   Here is contact info: refloowlibrarycontact@gmail.com
-  or main dev steam: https://steamcommunity.com/id/MajokingGames/
+  main dev steam: https://steamcommunity.com/id/MajokingGames/
+  Support Discord: https://discord.gg/nNSDPvKBjt
+  
+  Donate: https://ko-fi.com/refloow
 
  */
 
@@ -57,5 +60,8 @@ const logger = module.exports = winston.createLogger({
 /* 
   Here is contact info: refloowlibrarycontact@gmail.com
   or main dev steam: https://steamcommunity.com/id/MajokingGames/
+  Support Discord: https://discord.gg/nNSDPvKBjt
+  
+  Donate: https://ko-fi.com/refloow
 
  */
