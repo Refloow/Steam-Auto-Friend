@@ -55,7 +55,7 @@ https://discord.gg/XxvjjPs
 
 # Prerequisites
 
-- Node.js - Version recommended for most users (https://nodejs.org/en/)
+- Node.js - (Version recommended for most users) (https://nodejs.org/en/)
 
 - Text editor (recommend sublime: https://www.sublimetext.com/3)
 
