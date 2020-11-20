@@ -8,14 +8,31 @@
 # About
 Steam-Auto-Friend is Node.js based script for steam to accept all incoming friend requests on steam sending one custom welcome message, adding user to selected group and displaying custom playing game status message.
 
-![GitHub package version](https://img.shields.io/github/package-json/v/Refloow/Steam-Auto-Friend.svg)
-[![GitHub forks](https://img.shields.io/github/forks/Refloow/Steam-Auto-Friend.svg?style=plastic)](https://github.com/Refloow/Steam-Auto-Friend/network)
-[![GitHub stars](https://img.shields.io/github/stars/Refloow/Steam-Auto-Friend.svg?style=plastic)](https://github.com/Refloow/Steam-Auto-Friend/stargazers)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=plastic)](https://raw.githubusercontent.com/Refloow/Steam-Auto-Friend/master/LICENSE)
-[![Support](https://img.shields.io/discord/690327113039085600)](https://discord.gg/XxvjjPs)
-[![Language](https://img.shields.io/badge/Uses-Node.js-green)](https://en.wikipedia.org/wiki/Node.js)
-[![Language](https://img.shields.io/badge/language-JavaScript-yellow.svg)](https://en.wikipedia.org/wiki/JavaScript)
-[![Steam](https://img.shields.io/badge/steam-donate-yellow.svg)](https://steamcommunity.com/tradeoffer/new/?partner=392773011&token=CncehZti)
+<p align= "center">
+  <img src="https://img.shields.io/github/package-json/v/Refloow/Steam-Auto-Friend.svg" alt="GitHub package version">
+  </a>
+    <a href="https://github.com/Refloow/Steam-Auto-Friend/network">
+  <img src="https://img.shields.io/github/forks/Refloow/Steam-Auto-Friend.svg?style=plastic" alt="GitHub forks">
+  </a>
+    <a href="https://github.com/Refloow/Steam-Auto-Friend/stargazers">
+  <img src="https://img.shields.io/github/stars/Refloow/Steam-Auto-Friend.svg?style=plastic" alt="GitHub stars">
+  </a>
+    <a href="https://raw.githubusercontent.com/Refloow/Steam-Auto-Friend/master/LICENSE">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=plastic" alt="GitHub license">
+  </a>
+    <a href="https://discord.gg/XxvjjPs">
+  <img src="https://img.shields.io/discord/690327113039085600" alt="Support">
+  </a>
+    <a href="https://en.wikipedia.org/wiki/Node.js">
+  <img src="https://img.shields.io/badge/Uses-Node.js-green" alt="Language">
+  </a>
+    <a href="https://en.wikipedia.org/wiki/JavaScript">
+  <img src="https://img.shields.io/badge/language-JavaScript-yellow.svg" alt="Language">
+  </a>
+    <a href="https://steamcommunity.com/tradeoffer/new/?partner=392773011&token=CncehZti">
+  <img src="https://img.shields.io/badge/steam-donate-yellow.svg" alt="Steam">
+  </a>
+</p>
 
 <p align= "center">
   <a href="https://ko-fi.com/P5P02ONAC">
