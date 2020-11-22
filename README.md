@@ -5,8 +5,15 @@
 <img width="600" height="100" src="https://github.com/d0biar/skdsajl/blob/master/ProjectImages/Steam-Auto-Friend.png">
 </p>
 
-# About
+<h1 align= "center"><b>
+  About
+  </b>
+</h1>
+
+<p align= "center">
 Steam-Auto-Friend is Node.js based script for steam to accept all incoming friend requests on steam sending one custom welcome message, adding user to selected group and displaying custom playing game status message.
+  <hr>
+</p>
 
 <p align= "center">
   <img src="https://img.shields.io/github/package-json/v/Refloow/Steam-Auto-Friend.svg" alt="GitHub package version">
