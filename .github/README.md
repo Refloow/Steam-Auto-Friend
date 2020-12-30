@@ -70,14 +70,26 @@ Project is made open source and **free for all.**<br>
 
 # DISCORD Support Server
 
-https://discord.gg/XxvjjPs
+**https://discord.gg/XxvjjPs**
+
+<hr>
 
 # Support the project
-- If you like the project and the fact that is free you can support us by giving an donation.
+- **If you like the project and the fact that is free you can support us by giving an donation.**
 - We are accepting donations on:
 
 1. Ko-fi: https://ko-fi.com/refloow
 2. Steam: https://steamcommunity.com/tradeoffer/new/?partner=392773011&token=CncehZti
+
+<hr>
+
+# Want Improvements ?
+
+If you have some private requests feel free to contact main dev : https://steamcommunity.com/id/MajokingGames/<br>
+Or mail at refloowlibrarycontact@gmail.com <br>
+**Note that we wont add any platform breaking TOS Modifications to any of our existing or requested projects**
+
+<hr>
 
 # Features
 
@@ -133,8 +145,3 @@ Step 5 (run the bot)
 - Click start.bat file to run bot.
 
 If there is any questions feel free to ask me on: https://steamcommunity.com/id/MajokingGames/
-
-# Want Improvements ?
-
-If you have some private requests feel free to contact main dev : https://steamcommunity.com/id/MajokingGames/
-Or mail at refloowlibrarycontact@gmail.com
