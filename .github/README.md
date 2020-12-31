@@ -75,7 +75,7 @@ Project is made open source and **free for all.**<br>
 ### `Setup Guide`
 > **[Step By Step Setup Guide]()**<br>
 ### `Contributions`
-> **[Want to contribute? Read how]()**<br>
+> **[Want to contribute? Read how](https://github.com/OSL-Works/Steam-Auto-Friend/blob/master/.github/CONTRIBUTING.md)**<br>
 ### `Features`
 > **[See list of features]()**<br>
 > **[See version changelogs]()**<br>
