@@ -87,6 +87,8 @@ Project is made open source and **free for all.**<br>
 ### `FAQ`
 > **[Frequently Asked Questions]()**(currenty writing)<br>
 
+This file will be updated as soon as writing guides has been finished
+
 <hr>
 
 # DISCORD Support Server
