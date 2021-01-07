@@ -73,7 +73,7 @@ Project is made open source and **free for all.**<br>
 <hr>
 
 ### `Setup Guide`
-> **[Step By Step Setup Guide](https://github.com/OSL-Works/Steam-Auto-Friend/wiki)**<br>
+> **[Step By Step Setup Guide](https://github.com/OSL-Works/Steam-Auto-Friend/wiki)**(currenty writing)<br>
 ### `Troubleshooting Guide`
 > **[List of common user made errors and how to solve them]()**(will be added later as a link)<br>
 ### `Contributions`
