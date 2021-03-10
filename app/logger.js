@@ -87,4 +87,7 @@ const logger = module.exports = winston.createLogger({
   level: 'info'
 });
 
+// Copyright notice:
 
+/* Original work: Copyright (c) 2020-2021 Refloow All rights reserved.
+  Code origin (Free GitHub publish): https://github.com/OSL-Works/Steam-Auto-Friend*/
