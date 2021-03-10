@@ -82,13 +82,9 @@ console.log('Steam: https://steamcommunity.com/tradeoffer/new/?partner=392773011
 // Importing main app file
 require('./app/app.js');
 
-	
 
-/* 
-  Here is contact info: refloowlibrarycontact@gmail.com
-  main dev steam: https://steamcommunity.com/id/MajokingGames/
-  
-  Donate: https://ko-fi.com/refloow
+// Copyright notice:
 
- */
+/* Original work: Copyright (c) 2020-2021 Refloow All rights reserved.
+  Code origin (Free GitHub publish): https://github.com/OSL-Works/Steam-Auto-Friend*/
 
