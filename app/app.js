@@ -215,4 +215,7 @@ refloow.on("friendsList", function(steamid64, relationship) {
     }
 });
 
+// Copyright notice:
 
+/* Original work: Copyright (c) 2020-2021 Refloow All rights reserved.
+  Code origin (Free GitHub publish): https://github.com/OSL-Works/Steam-Auto-Friend*/
