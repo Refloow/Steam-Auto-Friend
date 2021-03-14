@@ -8,6 +8,7 @@
   },
   "homepage": "https://github.com/Refloow/Steam-Auto-Friend/blob/master/README.md",
   "dependencies": {
+    "console-master": "1.0.2",
     "moment": "2.28.0",
     "request": "2.88.0",
     "request-promise": "4.2.6",
