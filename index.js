@@ -55,6 +55,9 @@ try {
 	process.exit(1);
 }
 
+const package = require('./package.json');
+const v = package.version; 
+
 // Basic display information on app start
 
 console.log('8888888b.          .d888888                              '.cyan);
@@ -67,7 +70,7 @@ console.log('888  T88b Y8b.    888   888Y88..88PY88..88PY88b 888 d88P '.cyan);
 console.log('888   T88b "Y8888 888   888 "Y88P"  "Y88P"  "Y8888888P" \n\n\n'.cyan);
 console.log('/* Original work: Copyright (c) 2020-2021 Refloow All rights reserved. \n Code origin (Free GitHub publish): https://github.com/OSL-Works/Steam-Auto-Friend*/\n'.cyan);
 console.log('This bot was developed by MajokingGames'.cyan);
-console.log('Verision 1.3.1'.cyan);
+console.log(`Verision ${v}`.cyan);
 console.log('Thanks for choosing us.'.cyan);
 console.log('This version doesnt contain UI'.red);
 console.log('Loading config file...'.green );
