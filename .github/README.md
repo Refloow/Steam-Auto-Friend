@@ -47,6 +47,7 @@ Steam-Auto-Friend is Node.js based script for steam to accept all incoming frien
   </a>
 </p>
 
+<h3 align= "center"> Leave a star, we push updates based on activity </h3>
 
 # Note:
 
