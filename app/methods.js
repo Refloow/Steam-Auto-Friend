@@ -4,10 +4,10 @@
 /*--------------------------------------------------------------------------------------------- 
 * Original work: Copyright (c) 2020-2021 Refloow All rights reserved.
 
-* Code origin: https://github.com/OSL-Works/Steam-Auto-Friend
+* Code origin: https://github.com/Refloow/Steam-Auto-Friend
 * Developer name: Veljko Vuckovic
 * Licensed under the MIT License. See LICENSE in the project root for license information.
-* Published License: https://github.com/OSL-Works/Steam-Auto-Friend/master/LICENSE
+* Published License: https://github.com/Refloow/Steam-Auto-Friend/master/LICENSE
 
 * Contact information:
   Discord Support Server: https://discord.gg/D8WCtDD
@@ -142,5 +142,5 @@ t = module.exports = {
 // Copyright notice:
 
 /* Original work: Copyright (c) 2020-2021 Refloow All rights reserved.
-  Code origin (Free GitHub publish): https://github.com/OSL-Works/Steam-Auto-Friend*/
+  Code origin (Free GitHub publish): https://github.com/Refloow/Steam-Auto-Friend*/
 
