@@ -25,6 +25,7 @@
     "type": "git",
     "url": "git+https://https://github.com/Refloow/Steam-Auto-Friend.git"
   },
-  "author": "Refloow -MajokingGames https://steamcommunity.com/id/MajokingGames/",
-  "license": "MIT"
+  "author": "Veljko Vuckovic",
+  "license": "MIT",
+  "years": "2020-2022"
 }
