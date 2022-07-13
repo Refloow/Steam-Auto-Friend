@@ -71,7 +71,8 @@ Repo link: https://github.com/Refloow/Steam-Auto-Friend
         // Soon adding minimum_level_offline    // Minimum level required to be automaticly accepted if your request is sent while bot is offline
 
 
-
+    checkdata: false,                       // [true/false] Enable or disable | This feature is used for monitoring it shows scripts ussage of system resources
+    showtimer: 60000,  // Time in ms of cycle when will next info be shown. (By default set to 10min);
 
 
 
