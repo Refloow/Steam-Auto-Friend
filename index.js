@@ -58,6 +58,9 @@ try {
 
 // Importing required files
 const package = require('./package.json');
+const diagnostics = require('saf-diagnostics');
+const method = require('./app/methods.js')
+const config = require('./app/settings/config.js')
 const v = package.version; 
 
 // Basic display information on app start
@@ -88,6 +91,17 @@ console.log('Steam: https://steamcommunity.com/tradeoffer/new/?partner=908829436
 // Importing main app file
 require('./app/app.js');
 
+function call() {
+    setInterval(getit, config.showtimer);
+}
+
+function getit() {
+  diagnostics.getusage();
+}
+
+if(method.CheckData()) {
+  call();
+}
 
 // Copyright notice:
 
