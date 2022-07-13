@@ -68,6 +68,10 @@ t = module.exports = {
         return config.UpdateNotif == true;
     },
 
+    CheckData: function() {
+        return config.checkdata == true;
+    },
+
     // Method for disabling adding welcome message
     messagesEnabled: function() {
         return config.welcome_message_enable == true;
