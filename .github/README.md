@@ -125,10 +125,6 @@ Or mail at refloowlibrarycontact@gmail.com <br>
 - Steam Account
 - Shared Secret code ([What is ?](https://searchsecurity.techtarget.com/definition/shared-secret) | [How to get it on IOS ?](https://forums.backpack.tf/topic/45995-guide-how-to-get-your-shared-secret-from-ios-device-steam-mobile/) | [How to get it on android ?](https://forums.backpack.tf/topic/46354-guide-how-to-find-the-steam-identity_secret-on-an-android-phone/))
 
-# Detailed YouTube Video Tutorial
-
-https://www.youtube.com/watch?v=7TkuuvMM72c
-
 # Setup Guide (Step By Step)
 
 To setup bot follow next steps.
