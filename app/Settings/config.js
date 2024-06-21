@@ -50,8 +50,8 @@ Repo link: https://github.com/Refloow/Steam-Auto-Friend
 
  
         // Set false to disable
-        group_inviting: true,                   // [true/false] inviting user to the selected group
-	    INVITETOGROUPID: '',                // id of the group that bot will invite user after accepting friend request
+        group_inviting: false,                   // [true/false] inviting user to the selected group
+	    INVITETOGROUPID: '',                // id of the group that bot will invite user after accepting friend request, make sure you configure it properly if you set group_inviting to true
 
         // Set false to disable
         welcome_message_enable: true,           // [true/false] senting message after accepting friend request
