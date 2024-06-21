@@ -2,7 +2,7 @@ module.exports = {
 
 // Copyright notice:
 
-/* Original work: Copyright (c) 2020-2021 Refloow All rights reserved.
+/* Original work: Copyright (c) 2020-2024 Veljko Vuckovic (Refloow.com) All rights reserved.
   Code origin (Free GitHub publish): https://github.com/Refloow/Steam-Auto-Friend*/
 	
 	    
