@@ -1,8 +1,24 @@
 {
-  "name": "steam-auto-friend",
+  "name": "@refloow/steam-auto-friend",
   "version": "1.3.4",
-  "description": "Node.js based script to accept incoming friend requests on steam sending one custom welcome message and displaying custom playing game status message.",
+  "description": "Refloow™ Steam Auto Friend - Node.js based script to accept incoming friend requests on steam sending one custom welcome message and displaying custom playing game status message.",
   "main": "index.js",
+  "private": true,
+  "author": {
+    "name": "Refloow",
+    "email": "legal@refloow.com",
+    "url": "https://refloow.com"
+  },
+  "contributors": [
+    {
+      "name": "Veljko Vuckovic",
+      "url": "https://github.com/Refloow"
+    }
+  ],
+  "funding": {
+    "type": "individual",
+    "url": "https://refloow.com"
+  },
   "bugs": {
     "url": "https://github.com/Refloow/Steam-Auto-Friend/issues"
   },
@@ -26,8 +42,4 @@
   "repository": {
     "type": "git",
     "url": "git+https://https://github.com/Refloow/Steam-Auto-Friend.git"
-  },
-  "author": "Veljko Vuckovic",
-  "license": "MIT",
-  "years": "2020-2022-2023-2024-2025"
-}
+  }
