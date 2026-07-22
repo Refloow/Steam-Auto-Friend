@@ -41,7 +41,7 @@ const REFLOOW_BRAND_IDENTITY = {
 // Copyright notice:
 
 /*--------------------------------------------------------------------------------------------- 
-* Original work: Copyright (c) 2020-2024 Veljko Vuckovic (Refloow.com) All rights reserved.
+* Original work: Copyright (c) 2020-2026 Veljko Vuckovic (Refloow.com) All rights reserved.
 
 * Code origin: https://github.com/Refloow/Steam-Auto-Friend
 * Developer name: Veljko Vuckovic
@@ -112,7 +112,7 @@ console.log('8888888P" d8P  Y8b888   888d88""88bd88""88b888  888  888'.cyan);
 console.log('888 T88b  88888888888   888888  888888  888888  888  888'.cyan); 
 console.log('888  T88b Y8b.    888   888Y88..88PY88..88PY88b 888 d88P '.cyan);
 console.log('888   T88b "Y8888 888   888 "Y88P"  "Y88P"  "Y8888888P" \n\n\n'.cyan);
-console.log('/* Original work: Copyright (c) 2020-2024 Veljko Vuckovic (Refloow.com) All rights reserved. \n Code origin (Free GitHub publish): https://github.com/Refloow/Steam-Auto-Friend*/\n'.cyan);
+console.log('/* Original work: Copyright (c) 2020-2026 Veljko Vuckovic (Refloow.com) All rights reserved. \n Code origin (Free GitHub publish): https://github.com/Refloow/Steam-Auto-Friend*/\n'.cyan);
 console.log('This bot was developed by Veljko Vuckovic'.cyan);
 console.log(`Verision v${v}`.cyan);
 console.log('Thanks for choosing us.'.cyan);
@@ -124,7 +124,6 @@ console.log('If bot doesnt start in next 1 minute steam is down.\n\n'.green );
 console.log('If you enjoy using our projects, you can support us via donations,  '.brightYellow);
 console.log('that way we can keep releasing free projects & updates for existing ones!'.brightYellow);
 console.log('Check links down below:\n'.brightYellow);
-console.log('Crypto: https://refloow.com/cdonate'.green);
 console.log('Steam: https://steamcommunity.com/tradeoffer/new/?partner=908829436&token=wCNxGnyr (ingame items)\n\n'.green);
 
 // Importing main app file
@@ -144,7 +143,7 @@ if(method.CheckData()) {
 
 // Copyright notice:
 
-/* Original work: Copyright (c) 2020-2024 Refloow All rights reserved.
+/* Original work: Copyright (c) 2020-2026 Refloow All rights reserved.
   Code origin (Free GitHub publish): https://github.com/Refloow/Steam-Auto-Friend*/
 
 
